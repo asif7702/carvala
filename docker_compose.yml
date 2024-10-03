@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .  # Use the current directory as the build context
+      dockerfile: Dockerfile  # Specify the Dockerfile if it's named something other than 'Dockerfile'
+    ports:
+      - "8000:80"
